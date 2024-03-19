@@ -1,0 +1,57 @@
+@import url(https://fonts.bunny.net/css?family=archivo-narrow:400,600,600i);
+*{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+#svg{display: inline;}
+hr{
+    border: 1px solid #000 !important;
+    width: 50%;
+    margin: 1em !important;
+}
+.fileInput{
+    width: 25em;
+}
+.voice-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.errorVoice{
+    background-color: red;
+    border-radius: 7px;
+}
+@media screen and (max-width: 800px) {
+    .main-div{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    #dashboardContent{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    #dashboardContent *{
+        width: 80%;
+        margin: auto;
+    }
+    #mainInfo{
+        display: flex;
+        flex-direction: column!important;
+    }
+    a span{
+        display: none;
+    } 
+    a img{
+        height: 90%;
+        width: 90%;
+    }
+    
+    .fileInput{
+        width: 15em;
+        text-wrap: wrap;
+    }
+    #labelFile input{
+        width: 100%;
+        text-overflow: clip;
+    }    
+    
+}
